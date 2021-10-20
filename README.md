@@ -25,23 +25,6 @@ set<int> v_set; // contain every docid of document which contain keyword
 unordered_map<char, Trie*> map; // contain pointers to next node of a Trie tree
 ```
 
-# How To Run
-
-Inside the code, there are 2 functions:
-
-- custom_test(): custom query input from console
-- test_with_100_query(): read query from the file `100_query.txt` and run query into file `100_query_result.txt`
-
-Code default is custom_test()
-
-You can modify the code into test_with_100_query() for runing with 100_query.txt test.
-
-## Reversed-index
-
-```
-cd reversed_index/
-g++ -std=c++17 main.cpp -o main && ./main product_names.txt
-```
 # Evaluation
 
 The estimate time of preprocessing_document function is 3-6s.
